@@ -1,6 +1,9 @@
 #Follow on the educational instagram account: @cyber_vishucodex
+---
 #Follow on the Personal instagram account:@itz_jerry_boy_658
+---
 Now Read Below Information About Survey And How To Use It.
+---
 # Post-COVID Mental Health Survey
 
 This is a **Post-COVID Mental Health Survey** created for students of **LAD Lady Amritabai Daga College**.  
@@ -39,7 +42,7 @@ The survey is designed to assess the impact of the COVID-19 pandemic on college 
 ---
 
 ## 🚀 How to Use
-
+---
 1. Open the website link (GitHub Pages) in your browser.  
 2. Fill in the survey with your details.  
 3. Click **Submit Survey**.  
@@ -56,7 +59,7 @@ The survey is designed to assess the impact of the COVID-19 pandemic on college 
 
 ---
 ## 📁 Repository Structure
-
+---
 repository-name/
 │
 ├── index.html # Main survey page
