@@ -16,7 +16,7 @@ The survey is designed to assess the impact of the COVID-19 pandemic on college 
 
 - Built with **HTML** and **CSS**.  
 - Hosted on **GitHub Pages**.  
-- Form submissions are sent directly to email using **[Formspree](https://formspree.io/)**.  
+- Form submissions are sent directly to email honor  
 - Fully responsive and easy to use.  
 - Includes **16 questions** about mental health and online learning.
 ---
