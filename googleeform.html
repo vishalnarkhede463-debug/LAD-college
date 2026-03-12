@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Post-COVID Mental Health Survey</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:hsla(0, 0%, 7%, 0.167);
+color:#000;
+padding:40px;
+}
+
+.header{
+text-align:center;
+margin-bottom:30px;
+}
+
+.header img{
+width:80px;
+margin-bottom:10px;
+}
+
+.header h2{
+margin:0;
+color:#00adb5;
+}
+
+.container{
+max-width:700px;
+margin:auto;
+background:#f3f1f1;
+padding:30px;
+border-radius:10px;
+}
+
+h1{
+text-align:center;
+margin-bottom:10px;
+}
+
+p{
+text-align:center;
+color:#0a0000;
+margin-bottom:30px;
+}
+
+.question{
+margin-bottom:20px;
+}
+
+label{
+display:block;
+margin-bottom:8px;
+font-weight:bold;
+}
+
+input, select{
+width:100%;
+padding:10px;
+border:none;
+border-radius:5px;
+margin-top:5px;
+}
+
+.radio-group{
+margin-top:5px;
+}
+
+.radio-group label{
+font-weight:normal;
+display:inline-block;
+margin-right:15px;
+}
+
+button{
+width:100%;
+padding:12px;
+background:#00adb5;
+border:none;
+color:white;
+font-size:16px;
+border-radius:6px;
+cursor:pointer;
+margin-top:20px;
+}
+
+button:hover{
+background:#008b92;
+}
+
+#thankyou{
+display:none;
+text-align:center;
+font-size:20px;
+margin-top:20px;
+color:#010f09;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+<img src="img/lad-logo.jpg" alt="LAD College Logo">
+<h2>LAD Lady Amritabai Daga College</h2>
+</div>
+
+<div class="container">
+
+<h1>Post-COVID Mental Health Survey</h1>
+
+<p>
+Aim: To assess stress, anxiety, depression, and social adjustment issues among college students after COVID-19.
+</p>
+
+<form id="surveyForm" action="https://formspree.io/f/xaqpogok" method="POST">
+
+<input type="hidden" name="_subject" value="Post-COVID Mental Health Survey Response">
+
+<div class="question">
+<label>1. Name</label>
+<input type="text" name="Student Name" placeholder="Enter your Name" required>
+</div>
+
+<div class="question">
+<label>2. Age</label>
+<input type="number" name="Age" placeholder="Enter your Age" required>
+</div>
+
+<div class="question">
+<label>3. Gender</label>
+<select name="Gender" required>
+<option value="">Select</option>
+<option>Male</option>
+<option>Female</option>
+<option>Other</option>
+</select>
+</div>
+
+<div class="question">
+<label>4. Did you experience COVID-19 infection?</label>
+<div class="radio-group">
+<label><input type="radio" name="Did you experience COVID-19 infection?" value="Yes"> Yes</label>
+<label><input type="radio" name="Did you experience COVID-19 infection?" value="No"> No</label>
+<label><input type="radio" name="Did you experience COVID-19 infection?" value="Not sure"> Not sure</label>
+</div>
+</div>
+
+<div class="question">
+<label>5. Did you experience increased stress after the pandemic?</label>
+<div class="radio-group">
+<label><input type="radio" name="Increased stress after pandemic" value="Yes"> Yes</label>
+<label><input type="radio" name="Increased stress after pandemic" value="No"> No</label>
+</div>
+</div>
+
+<div class="question">
+<label>6. Do you feel anxious about your future?</label>
+<select name="Feel anxious about future">
+<option>Yes</option>
+<option>No</option>
+<option>Sometimes</option>
+</select>
+</div>
+
+<div class="question">
+<label>7. Have you experienced sadness or depression?</label>
+<select name="Experienced sadness or depression">
+<option>Yes</option>
+<option>No</option>
+<option>Sometimes</option>
+</select>
+</div>
+
+<div class="question">
+<label>8. Do you have difficulty concentrating on studies?</label>
+<select name="Difficulty concentrating on studies">
+<option>Yes</option>
+<option>No</option>
+</select>
+</div>
+
+<div class="question">
+<label>9. Has your sleep pattern changed?</label>
+<select name="Sleep pattern changed">
+<option>Yes</option>
+<option>No</option>
+</select>
+</div>
+
+<div class="question">
+<label>10. Do you feel socially isolated?</label>
+<select name="Feel socially isolated">
+<option>Yes</option>
+<option>No</option>
+<option>Sometimes</option>
+</select>
+</div>
+
+<div class="question">
+<label>11. Did online learning affect your mental health?</label>
+<select name="Online learning affected mental health">
+<option>Yes</option>
+<option>No</option>
+<option>Not sure</option>
+</select>
+</div>
+
+<div class="question">
+<label>12. Did you feel more academic pressure?</label>
+<select name="Academic pressure">
+<option>Yes</option>
+<option>No</option>
+</select>
+</div>
+
+<div class="question">
+<label>13. Did you experience lack of motivation?</label>
+<select name="Lack of motivation">
+<option>Yes</option>
+<option>No</option>
+<option>Sometimes</option>
+</select>
+</div>
+
+<div class="question">
+<label>14. Do you talk to others when you feel stressed?</label>
+<select name="Talk to others when stressed">
+<option>Yes</option>
+<option>No</option>
+<option>Sometimes</option>
+</select>
+</div>
+
+<div class="question">
+<label>15. Are you aware of mental health services in your college?</label>
+<select name="Aware of mental health services">
+<option>Yes</option>
+<option>No</option>
+</select>
+</div>
+
+<div class="question">
+<label>16. Should colleges provide more counseling programs?</label>
+<select name="Need more counseling programs in college">
+<option>Yes</option>
+<option>No</option>
+</select>
+</div>
+
+<button type="submit">Submit Survey</button>
+
+</form>
+
+<div id="thankyou">
+Thank you for participating in the survey!
+</div>
+
+</div>
+
+<script>
+
+document.getElementById("surveyForm").addEventListener("submit",function(){
+setTimeout(function(){
+document.getElementById("surveyForm").style.display="none";
+document.getElementById("thankyou").style.display="block";
+},1000);
+});
+
+</script>
+
+</body>
+</html>
